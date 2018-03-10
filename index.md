@@ -18,10 +18,13 @@ By implementing the functions (shown below) defined by the ERC20 interface, CAP 
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 ```
 
-### Jekyll Themes
+### CAP Token Attributes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jzhr/cap.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+In the smart contract 'CapToken.sol', I defined CAP to have a total supply 1,000,000 Caps with 0 decimal places.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```markdown
+    uint public constant _totalSupply = 1000000;
+    string public constant symbol = "CAP";
+    string public constant name = "Cap Token";
+    uint8 public constant decimals = 0;
+```
