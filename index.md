@@ -5,27 +5,18 @@ Based on the ERC20 standard interface, CAP is a fully functional cryptocurrency 
 
 ### Smart Contracts
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+By implementing the functions (shown below) defined by the ERC20 interface, CAP can be called an 'ERC20 Token'. This means that CAP follows the rules that are required to interact with other tokens on the Ethereum network. 
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+    function totalSupply() constant returns (uint256 supply);
+    function balanceOf(address _owner) constant returns (uint256 balance);
+    function transfer(address _to, uint256 _value) returns (bool success);
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success);
+    function approve(address _spender, uint256 _value) returns (bool success);
+    function allowance(address _owner, address _spender) constant returns (uint256 remaining);
+    event Transfer(address indexed _from, address indexed _to, uint256 _value);
+    event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
 
